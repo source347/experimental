@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پورتال سه‌گانه: درآمد، سرمایه‌گذاری و رشد</title>
-    <link href="https://cdn.fontcdn.ir/css/Vazir" rel="stylesheet" type="text/css">
+    <title>Ascension Portal: Global Investment & Growth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
         /* General Setup & Theme */
         :root {
-            --primary-color: #00ff88; /* Emerald Green */
-            --secondary-color: #ffd700; /* Gold/Yellow */
+            --primary-color: #00ff88; /* Emerald Green for Growth */
+            --secondary-color: #ffd700; /* Gold/Yellow for Value */
             --bg-dark: #121212;
             --card-dark: #1e1e1e;
             --text-light: #f0f0f0;
@@ -25,13 +25,14 @@
         }
 
         body {
-            font-family: 'Vazir', Tahoma, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: var(--bg-dark);
             color: var(--text-light);
             display: flex;
             justify-content: center;
             padding: 40px 20px;
             min-height: 100vh;
+            direction: ltr; /* Left-to-Right for English */
         }
 
         .container {
@@ -55,7 +56,7 @@
             color: var(--primary-color);
             margin-bottom: 5px;
             text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
-            font-weight: 800;
+            font-weight: 900;
         }
 
         .page-header p {
@@ -74,11 +75,11 @@
 
         .category-title {
             grid-column: 1 / -1;
-            text-align: right;
+            text-align: left;
             font-size: 1.6em;
             color: var(--secondary-color);
-            border-right: 4px solid var(--secondary-color);
-            padding-right: 15px;
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 15px;
             margin-top: 25px;
             margin-bottom: 15px;
             font-weight: 700;
@@ -92,11 +93,11 @@
             text-decoration: none;
             display: flex;
             flex-direction: column;
-            align-items: flex-end; /* Align content to the right (RTL) */
+            align-items: flex-start; /* Align content to the left (LTR) */
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             position: relative;
             overflow: hidden;
-            text-align: right;
+            text-align: left;
         }
 
         /* Hover Interaction */
@@ -109,11 +110,11 @@
 
         /* Animated Chevron */
         .link-card::after {
-            content: "\f053"; /* Font Awesome left chevron */
+            content: "\f054"; /* Font Awesome right chevron */
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             position: absolute;
-            left: 20px;
+            right: 20px;
             top: 50%;
             transform: translateY(-50%) translateX(0);
             color: var(--primary-color);
@@ -122,7 +123,7 @@
         }
         
         .link-card:hover::after {
-            transform: translateY(-50%) translateX(-5px);
+            transform: translateY(-50%) translateX(5px);
             opacity: 1;
         }
 
@@ -153,124 +154,114 @@
             color: var(--bg-dark);
             padding: 4px 8px;
             border-radius: 5px;
-            align-self: flex-start; /* Place tag on the left (RTL) */
+            align-self: flex-end; /* Place tag on the right (LTR) */
             font-weight: 600;
-            direction: ltr; /* Ensure tag text is left-to-right */
-        }
-        
-        /* Footer */
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.85em;
-            color: var(--text-muted);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header class="page-header">
-            <h1>ASCENSION</h1>
-            <p>پورتال مرجع شما برای صعود مالی: صرافی‌ها، دیفای و شبکه‌های رشد پایدار</p>
+            <h1>ASCENSION PROTOCOL</h1>
+            <p>Your Global Gateway to Digital Wealth, High-Tier Exchange, and Sustainable Growth Networks.</p>
         </header>
 
         <main class="link-grid">
 
-            <h3 class="category-title">۱. دروازه‌های مالی و صرافی‌ها</h3>
+            <h3 class="category-title">1. Prime Exchanges & Financial Gateways</h3>
 
             <a href="https://accounts.binance.com/en/register?ref=TAWUFT3R" target="_blank" class="link-card exchange-link">
                 <div class="link-icon"><i class="fas fa-landmark"></i></div>
-                <div class="link-title">Binance (بایننس)</div>
-                <div class="link-description">بزرگترین اکوسیستم تبادل جهانی؛ بستر اصلی معاملات و فیوچرز.</div>
+                <div class="link-title">Binance (Global)</div>
+                <div class="link-description">The world's largest crypto ecosystem. Essential for spot, futures, and launchpad access.</div>
                 <div class="link-tag">#Exchange</div>
             </a>
             
             <a href="https://bingx.com/invite/9NNUWM" target="_blank" class="link-card exchange-link">
                 <div class="link-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="link-title">BingX (بینگ ایکس)</div>
-                <div class="link-description">متخصص در معاملات کپی و مشتقات؛ دروازه امن فیوچرز.</div>
+                <div class="link-title">BingX (Derivatives Hub)</div>
+                <div class="link-description">A leading platform specializing in futures trading, copy trading, and global markets.</div>
                 <div class="link-tag">#Futures</div>
             </a>
             
-            <a href="https://nobitex.ir/signup/?refcode=2817185" target="_blank" class="link-card exchange-link">
-                <div class="link-icon"><i class="fas fa-exchange-alt"></i></div>
-                <div class="link-title">Nobitex (نوبیتکس)</div>
-                <div class="link-description">برترین صرافی رمزارز داخلی با نقدینگی بالا و امنیت مطمئن.</div>
-                <div class="link-tag">#Local</div>
+            <a href="https://kryll.io/?k3ref=1149196503647875384" target="_blank" class="link-card tech-link">
+                <div class="link-icon"><i class="fas fa-robot"></i></div>
+                <div class="link-title">Kryll.io (Bot Trading)</div>
+                <div class="link-description">Automate your investment strategy with powerful, customizable trading bots.</div>
+                <div class="link-tag">#Automation</div>
             </a>
             
-            <a href="https://wallex.ir/signup?ref=zc3hbde" target="_blank" class="link-card exchange-link">
-                <div class="link-icon"><i class="fas fa-wallet"></i></div>
-                <div class="link-title">Wallex (والکس)</div>
-                <div class="link-description">صرافی مدرن داخلی برای ترید حرفه‌ای آلت‌کوین‌ها.</div>
-                <div class="link-tag">#LocalTrade</div>
+            <a href="https://payeer.com/?session=11397475" target="_blank" class="link-card finance-link">
+                <div class="link-icon"><i class="fas fa-money-check-alt"></i></div>
+                <div class="link-title">Payeer (E-Wallet)</div>
+                <div class="link-description">International electronic wallet for seamless fiat and crypto transfers.</div>
+                <div class="link-tag">#E-Money</div>
             </a>
             
-            <h3 class="category-title">۲. شبکه‌های رشد و درآمد غیرفعال (DePIN & AI)</h3>
+            <h3 class="category-title">2. Decentralized & Sustainable Growth (DePIN)</h3>
 
             <a href="https://app.getgrass.io/register?referralCode=XBPRl6U7sAvvzRX" target="_blank" class="link-card depin-link">
                 <div class="link-icon"><i class="fas fa-leaf"></i></div>
                 <div class="link-title">Grass.io (AI Data)</div>
-                <div class="link-description">اشتراک‌گذاری پهنای باند برای آموزش هوش مصنوعی و کسب توکن.</div>
+                <div class="link-description">Earn tokens by selling unused bandwidth to train AI models. A top DePIN opportunity.</div>
                 <div class="link-tag">#DePIN</div>
             </a>
 
             <a href="https://pawns.app?r=1112465" target="_blank" class="link-card depin-link">
                 <div class="link-icon"><i class="fas fa-wifi"></i></div>
-                <div class="link-title">Pawns.app</div>
-                <div class="link-description">کسب درآمد غیرفعال و آسان از اینترنت بلااستفاده‌ی شما.</div>
+                <div class="link-title">Pawns.app (Passive Income)</div>
+                <div class="link-description">Share your internet connection to generate easy, consistent passive income.</div>
                 <div class="link-tag">#PassiveIncome</div>
             </a>
             
-            <a href="https://app.allora.network/?ref=eyJyZWZlcnJlcl9pZCI6IjdkZTg0YmFmLWJlMTktNDZmYS1iN2NmLWU4OTkyYjgxNDA4ZiJ9" target="_blank" class="link-card tech-link">
-                <div class="link-icon"><i class="fas fa-robot"></i></div>
-                <div class="link-title">Allora Network</div>
-                <div class="link-description">عضویت در شبکه‌ هوش مصنوعی غیرمتمرکز و نوظهور.</div>
-                <div class="link-tag">#AI</div>
+            <a href="https://app.nodepay.ai/register?ref=5pxS8VIIZzNeDSF" target="_blank" class="link-card depin-link">
+                <div class="link-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="link-title">Nodepay Registration</div>
+                <div class="link-description">Sign up for Nodepay to join the decentralized network and earn early points.</div>
+                <div class="link-tag">#Web3</div>
             </a>
             
-            <a href="https://portal.peaq.xyz/?ref=c3u4jX08W" target="_blank" class="link-card depin-link">
-                <div class="link-icon"><i class="fas fa-share-alt"></i></div>
-                <div class="link-title">Peaq Network (پورتال)</div>
-                <div class="link-description">پلتفرم زیرساخت دیپین برای اقتصاد اشیاء (Internet of Things).</div>
-                <div class="link-tag">#IoT</div>
+            <a href="https://r.honeygain.me/PYMNF83E8F" target="_blank" class="link-card depin-link">
+                <div class="link-icon"><i class="fas fa-tint"></i></div>
+                <div class="link-title">Honeygain (Data Sharing)</div>
+                <div class="link-description">One of the most established platforms for sharing bandwidth and earning rewards.</div>
+                <div class="link-tag">#Data</div>
             </a>
-            
-            <h3 class="category-title">۳. ابزارهای تحلیل و دیفای (Alpha Tools)</h3>
+
+            <h3 class="category-title">3. Alpha Tools & DeFi Analytics</h3>
 
             <a href="https://auth.arkm.com/register?ref=8b98dceb-303b-4966-9261-24df8e29d874" target="_blank" class="link-card web3-link">
                 <div class="link-icon"><i class="fas fa-brain"></i></div>
                 <div class="link-title">Arkham Intelligence</div>
-                <div class="link-description">پلتفرم پیشرفته‌ی تحلیل آن‌چین با تکیه بر هوش مصنوعی.</div>
+                <div class="link-description">AI-powered on-chain analytics for tracking smart money and exchange flows.</div>
                 <div class="link-tag">#OnChain</div>
             </a>
             
             <a href="https://app.nansen.ai/ref?MgzAfN6OSnQ" target="_blank" class="link-card web3-link">
                 <div class="link-icon"><i class="fas fa-chart-pie"></i></div>
-                <div class="link-title">Nansen AI</div>
-                <div class="link-description">ابزار قدرتمند رصد و تحلیل داده‌های بلاکچین در لحظه.</div>
+                <div class="link-title">Nansen AI (Blockchain Data)</div>
+                <div class="link-description">The premier platform for real-time blockchain research and discovery.</div>
                 <div class="link-tag">#Analytics</div>
             </a>
             
             <a href="https://rubic.exchange/birthday5?referrer=3X8S8IFP324U" target="_blank" class="link-card web3-link">
                 <div class="link-icon"><i class="fas fa-cube"></i></div>
-                <div class="link-title">Rubic Exchange</div>
-                <div class="link-description">تجمیع‌کننده‌ی کراس‌چین سواپ با بهترین قیمت‌ها.</div>
+                <div class="link-title">Rubic Exchange (Cross-Chain)</div>
+                <div class="link-description">The ultimate cross-chain swap aggregator for multi-network transactions.</div>
                 <div class="link-tag">#DeFi</div>
             </a>
             
-            <a href="https://sosovalue.com/join/0DCN0PVQ" target="_blank" class="link-card web3-link">
-                <div class="link-icon"><i class="fas fa-search-dollar"></i></div>
-                <div class="link-title">SoSoValue</div>
-                <div class="link-description">ابزاری برای کشف زودهنگام آلفا و فرصت‌های سرمایه‌گذاری.</div>
-                <div class="link-tag">#Alpha</div>
+            <a href="https://app.allora.network/?ref=eyJyZWZlcnJlcl9pZCI6IjdkZTg0YmFmLWJlMTktNDZmYS1iN2NmLWU4OTkyYjgxNDA4ZiJ9" target="_blank" class="link-card tech-link">
+                <div class="link-icon"><i class="fas fa-robot"></i></div>
+                <div class="link-title">Allora Network (AI Infra)</div>
+                <div class="link-description">A core network for decentralized AI, powering the next generation of smart contracts.</div>
+                <div class="link-tag">#AI</div>
             </a>
 
         </main>
 
         <footer>
-            <p>© ۲۰۲۵ | طراحی شده با الهام از شبکه‌های مالی و رشد. <span style="color:var(--primary-color)">کسب و کار خود را به اوج برسانید.</span></p>
+            <p>© 2025 | Designed for the modern investor. <span style="color:var(--primary-color)">Maximize your potential.</span></p>
         </footer>
     </div>
 </body>
